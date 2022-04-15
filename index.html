@@ -9,7 +9,75 @@
             font-family: monospace; 
             text-align: center; 
         }
-    
+        #enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+}
+
+        .delete{
+            display: none;
+        }
+        .done{
+            background: gray !important; 
+            color: darkgrey; 
+        }
     </style>
 <script src="script.js" defer> </script>
     
@@ -21,10 +89,40 @@
     </div>
 
     <div class="Schedule">
+        <h4>Chores</h4>
+  
     </div>
-    
+    <div class="Todo">
+        <h3>To-do List</h3>
+        <p>Make your to-dos store locally! Enter text into the input field to add items to your list. Click the item to mark it as complete. Click the "X" to remove the item from your list</p>
+        
+<!--
+        <ul>
+        <li id="first">Complete review of Python</li>
+        <li id="second">Complete review of CSS</li>
+        <li id="third">Begin data structures</li>
+        </ul>
+-->
+    </div>
+    <!-- Enter List Here -->
+    	<div class="row">
+			<div class="col-12">
+				<input id="userInput" type="text" placeholder="New item..." maxlength="50">
+				<button id="enter">Save</button>
+			</div>
+    <!-- Empty List -->
+		<div class="row">
+			<div class="listItems">
+				<ul class="col-12">
+                    
+				</ul>
+			</div>
+		</div>
+    <!-- Timer --> 
+    <div class="time"> 
     <h3> Pomodoro Clock </h3>
         <h6>Current Time</h6>
+        
         <span id="time"><h3> Timer </h3></span>
        <h3 id="timer"> 0 </h3>
     <div class="buttons"> 
@@ -34,5 +132,10 @@
         <button id = "increase">Less Time!</button> <!--- this will add 5 min-->
         <button id="break">Take a Break</button> <!--this will be for a 15 min break -->
     </div>
+    </div>
+    <div>
+    
+    </div>
+    
 </body>    
 </html>
