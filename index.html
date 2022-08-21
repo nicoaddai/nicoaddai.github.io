@@ -3,91 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Organizing my Life</title>
-    <style> 
-        body {
-            font: 12px;
-            font-family: monospace; 
-            text-align: center; 
-        }
-        #enter {
-	border: none;
-	padding: 5px 15px;
-	border-radius: 5px;
-	color: #04A1BF;
-	background-color: #025F70;
-	transition: all 0.75s ease;
-	-webkit-transition: all 0.75s ease;
-	-moz-transition: all 0.75s ease;
-	-ms-transition: all 0.75s ease;
-	-o-transition: all 0.75 ease;
-	font-weight: normal;
-}
+    <link rel="stylesheet" href="style.css"> 
 
-#enter:hover{
-	background-color: #02798F;
-	color: #FFCD5D;
-}
-
-ul {
-	text-align: left;
-	margin-top: 20px;
-}
-
-
-li {
-	list-style: none;
-	padding: 10px 20px;
-	color: #ffffff;
-	text-transform: capitalize;
-	font-weight: 600;
-	border: 2px solid #025f70;
-	border-radius: 5px;
-	margin-bottom: 10px;
-	background: #4EB9CD;
-	transition: all 0.75s ease;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5 ease;
-}
-
-li:hover {
-	background: #76CFE0;
-}
-
-li > button {
-	font-weight: normal;
-	background: none;
-	border: none;
-	float: right;
-	color: #025f70;
-	font-weight: 800;
-}
-
-input {
-	border-radius: 5px;
-	min-width: 65%;
-	padding: 5px;
-	border: none;
-}
-
-        .delete{
-            display: none;
-        }
-        .done{
-            background: gray !important; 
-            color: darkgrey; 
-        }
-    </style>
 <script src="script.js" defer> </script>
+    <script src="calendar.js" defer> </script>
     
 </head>
 <body>
-    <div class="organizerHeader">
+    <div class="wrapper">
+    <div class="typing-demo">
     <h1>Nico's Schedule</h1>
-    <h3>This is HTML/JS project to organize Nico Addai's Life. </h3>
+    <h4>This is HTML/CSS/JS project to organize Nico Addai's Life. </h4>
+        </div>
     </div>
-
     <div class="Schedule">
         <h4>Chores</h4>
   
@@ -101,6 +29,8 @@ input {
         <li id="first">Complete review of Python</li>
         <li id="second">Complete review of CSS</li>
         <li id="third">Begin data structures</li>
+31 week - 3600 - stay with Uncle Kwame for the Easter break 
+40 week - 6200 
         </ul>
 -->
     </div>
@@ -122,6 +52,13 @@ input {
     <div class="time"> 
     <h3> Pomodoro Clock </h3>
         <h6>Current Time</h6>
+        <table>
+        <tr>
+        <td><h5 id="local-time"></h5> </td> 
+        <td><h5>Time</h5> </td>
+        <td><h5>Time</h5> </td>
+        </tr>
+        </table>
         
         <span id="time"><h3> Timer </h3></span>
        <h3 id="timer"> 0 </h3>
@@ -133,9 +70,52 @@ input {
         <button id="break">Take a Break</button> <!--this will be for a 15 min break -->
     </div>
     </div>
+            <br>
+            <br>
+            
     <div>
     
     </div>
+            <div class="month">
+    <h1 id="current-moth"></h1>
+        <div class="weekdays-name">
+      <div class="days-name">Sa</div>
+      <div class="days-name">Su</div>
+      <div class="days-name">Mo</div>
+      <div class="days-name">Tu</div>
+      <div class="days-name">We</div>
+      <div class="days-name">Th</div>
+      <div class="days-name">Fr</div>
+            
+    </div>
     
+    <footer>
+        <div>
+        <table>
+            <thead>
+            <th scope="col">CS Languages</th>
+            <th  scope="col">CS Concepts</th>
+            <th  scope="col">Life Goals</th>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>Javascript</td>
+                <td>Python</td> 
+                <td>Python</td> 
+                </tr>
+                <tr>
+                <td>Javascript</td>
+            <td>Python</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        </div>
+        
+        
+    </footer>
+    <script src="https://momentjs.com/downloads/moment.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.4.2/d3.min.js"></script>
+                
 </body>    
 </html>

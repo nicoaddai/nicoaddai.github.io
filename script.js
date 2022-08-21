@@ -1,6 +1,20 @@
-//set inital values 
+//Pomodoro Clock 
 
-let pomodoro = 0; 
+//let pomodoro = document.getElementById("timer");
+//button.addEventListener("click", startTimer); 
+let localTime = document.getElementById("local-time"); 
+console.log(localTime); 
+localTime.textContent = moment().format('LTS'); 
+
+let num = 25; 
+function counter(num){
+    while(num>0){
+     console.log(num);
+        num--; 
+    }
+}
+
+counter(num); 
 
 //select value and buttons 
 
@@ -73,4 +87,3 @@ function addListAfterKeypress(event) {
 enterButton.addEventListener("click",addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-

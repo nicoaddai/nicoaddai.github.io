@@ -1,0 +1,138 @@
+/* Smooth scroll*/
+html {
+  scroll-behavior: smooth;
+    padding: 5vw; 
+    align-content: center; 
+}
+
+
+/*Typing Effect */
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 50ch; 
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: wrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  80% {
+    border-color: transparent
+  }
+}
+       body {
+            font: 12px;
+            font-family: monospace; 
+            text-align: center; 
+        }
+        #enter {
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #04A1BF;
+	background-color: #025F70;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+
+body{
+   left: 10%; 
+}
+button{
+    font-family: monospace; 
+    border-radius: 25px;
+    float: center;
+	color: #025f70;
+	font-weight: 800;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+p{
+    font: 14px;
+}
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+    font-family: monospace; 
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: none;
+}
+
+        .delete{
+            display: none;
+        }
+        .done{
+            background: gray !important; 
+            color: darkgrey; 
+        }
+footer{
+    
+   width: 100%; 
+    background-color: darkblue; 
+    background-color: darkblue; 
+    color: aliceblue; 
+    float: right; 
+    align-content: center; 
+    -webkit-line-align: 20%; 
+    
+}
