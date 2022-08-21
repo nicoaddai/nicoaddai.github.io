@@ -1,7 +1,11 @@
-//Select 
+//Select dates and time 
 
 var currentMonth = document.getElementById("current-moth"); 
 console.log(currentMonth); 
+const startedCode = new Date(2022, 4, 1); 
+const stringStartedCode = startedCode.toDateString()
+var today = new Date();
+var daysSinceMarch = 
 
 //Using Moment.js Library to make Calendar 
 currentMonth.innerHTML = moment().format('MMMM');    
