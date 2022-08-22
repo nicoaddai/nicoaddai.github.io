@@ -1,14 +1,41 @@
 //Select dates and time 
-
 var currentMonth = document.getElementById("current-moth"); 
 console.log(currentMonth); 
 const startedCode = new Date(2022, 4, 1); 
 const stringStartedCode = startedCode.toDateString()
 var today = new Date();
-var daysSinceMarch = 
+var daysSinceMarch = startedCode - today; 
 
 //Using Moment.js Library to make Calendar 
 currentMonth.innerHTML = moment().format('MMMM');    
+
+const dayName = () => 
+{switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+}
+var howLongSince = document.getElementById("how-long"); 
+var dayToday = document.getElementById("day-name")
+
 
 
 /* Mornings - Finish the Khan Academy; then from 12pm - 2pm Project Time 

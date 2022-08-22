@@ -125,14 +125,24 @@ input {
             background: gray !important; 
             color: darkgrey; 
         }
+
+table{
+    padding: 10px; 
+    
+}
+th {
+    border-bottom: 1px solid black; 
+    padding: 2%; 
+}
+td{
+    padding: 10px; 
+    text-align: center; 
+}
 footer{
     
    width: 100%; 
     background-color: darkblue; 
-    background-color: darkblue; 
     color: aliceblue; 
-    float: right; 
-    align-content: center; 
-    -webkit-line-align: 20%; 
+    float: right;  
     
 }
