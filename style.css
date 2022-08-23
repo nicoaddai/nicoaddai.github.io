@@ -128,6 +128,7 @@ input {
 
 table{
     padding: 10px; 
+    align-content: center; 
     
 }
 th {
