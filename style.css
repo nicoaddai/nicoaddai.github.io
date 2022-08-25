@@ -1,7 +1,7 @@
-/* Smooth scroll*/
+/* Universal Smooth scroll */
 html {
   scroll-behavior: smooth;
-    padding: 5vw; 
+/*    padding: 5vw; */
     align-content: center; 
 }
 
@@ -139,10 +139,16 @@ td{
     padding: 10px; 
     text-align: center; 
 }
+
+
 footer{
     
    width: 100%; 
     background-color: darkblue; 
+    border-bottom-left-radius: 10%; 
+    border-bottom-right-radius: 10%; 
+    border-top-right-radius: 10%; 
+    border-top-left-radius: 10%; 
     color: aliceblue; 
     float: right;  
     

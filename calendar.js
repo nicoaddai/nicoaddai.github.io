@@ -1,12 +1,13 @@
 //Select dates and time 
 var currentMonth = document.getElementById("current-moth"); 
-const startedCode = new Date(2022, 4, 1); 
+var howManyDays = document.getElementById("days-since"); 
+const startedCode = new Date(2022, 3, 31); 
 const stringStartedCode = startedCode.toDateString()
 var today = new Date();
-var daysSinceMarch = startedCode - today; 
-
+var daysSinceMarch = Math.abs(Math.ceil((startedCode.getTime() - today.getTime())/(1000 * 3600 * 24))); 
 //Using Moment.js Library to make Calendar 
 currentMonth.innerHTML = "It is " + today.toDateString();  
+howManyDays.textContent = "It's been "+ daysSinceMarch +" days since I started."; 
 
 
 const dayName = () => 
