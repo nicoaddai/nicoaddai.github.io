@@ -129,16 +129,14 @@ input {
 table{
     padding: 10px; 
     align-content: center; 
+     display: inline-block;
+  justify-content: flex-end;
     
 }
 th {
-    border-bottom: 1px solid black; 
-    padding: 2%; 
+    border-bottom: 1px solid black;
 }
-td{
-    padding: 10px; 
-    text-align: center; 
-}
+
 
 
 footer{
