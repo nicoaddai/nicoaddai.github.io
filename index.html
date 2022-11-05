@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Organizing my Life</title>
+<title>Nico's Github Landing Page</title>
     <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
 
-<script src="script.js" defer> </script>
+    <script src="script.js" defer> </script>
     <script src="calendar.js" defer> </script>
     
 </head>
@@ -16,15 +18,36 @@
     <h4>This is Githubhub website of HTML/CSS/JS, MERN and ApacheBeam projects to show how good of a dev Nico Addai is. </h4>
         </div>
     </div>
+    <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio Games  
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://nicoaddai.github.io/num-game/">Number Guessing Game</a>
+<!--
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+-->
+    </div>
+  </div> 
+</div>
+      <div id="like_button_container"></div>
     <div class="port-chart">
+        
+      
         
            <div class="month">
                 <h3 id="current-moth"></h3>
     <h3>I have been working full-time to become a dev since March 31 2022.</h3>
                
                <h3 id ="days-since"></h3>
+               
+               <p> </p>
         
-    <table>
+    <table style="overflow-x:auto;">
     <thead>
         <th>Project/Tutorial Name</th>
         <th>Description </th>
@@ -114,34 +137,26 @@
     </div>
 
         
-    
-    <footer>
-        <div>
-        <table>
-            <thead>
-            <th scope="col">CS Languages</th>
-            <th  scope="col">CS Concepts</th>
-            <th  scope="col">Life Goals</th>
-            </thead>
-            <tbody>
-                <tr> 
-                    <td>Javascript</td>
-                <td>Python</td> 
-                <td>Python</td> 
-                </tr>
-                <tr>
-                <td>Javascript</td>
-            <td>Python</td>
-                </tr>
-            </tbody>
+    <div class="Layout Container">
+<!--HTML here for the rest of the layout -->
+</div> <!-- The closing tag for the "Layout Container" class -->
+<footer class="LayoutBottom">
+<div class="col-sm-12">
+$$FOOTER$$
+ 
+
             
-        </table>
-        </div>
-        
-        
-    </footer>
+</div>
+</footer>
+
     <script src="https://momentjs.com/downloads/moment.min.js"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.4.2/d3.min.js"></script>
+        
+   <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+ <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
                 
 </body>    
 </html>
